@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/*размер блока:
+width = margin + */
+
+
+body{
+    background-color: #ccc;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 960px;
+    margin: 50px auto;
+}
+
+/*классический размер блока:
+width = content + margin + padding + border*/
+
+.box{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid blue;
+}
+.box1{
+    background-color: red;
+    border-radius: 15px 0 15px 0;
+}
+.box2{
+    background-color: yellow;
+    border-radius: 50%;
+    /*display: flex;*/
+    
+}
+
+.box3{
+    background-color: green;
+    border-radius: 0 15px 0 15px;
+}
