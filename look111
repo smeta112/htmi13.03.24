@@ -1,0 +1,99 @@
+# htmi13.03.24
+.wraper   =><div class="wrapper">  </div>
+
+.box.box$*3 =>
+<div class="box box1">
+  Красный
+</div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+
+.wrapper{bgc}
+.box1{background-color: red}
+изменения
+w900 =>
+.wrapper{
+    background-color: #fff;
+    width: 900px;
+}
+обьединение
+.box{
+    width: 300px;
+    height: 300px;
+    display: inline-block; #блочный в строчный 
+}
+зазорчик - костыль
+усли удалить расстояние - его нет
+<div class="box box1">
+            Красный
+        </div><div class="box box2">
+            Жёлтый
+        </div><div class="box box3">
+            Зелёный
+        </div>
+ с внешки + 10пкс
+margin: 10px; в тот код        
+внутренний отступ
+padding: 20px;
+и уже 
+width: 1080px;   
+в враппер браузеру считатьо слева и справа
+m50-a
+margin: 50px auto;
+
+рамка  в 1(тож влияет на размер => width: 1110px;)
+border: 5px solid blue;
+
+/*классический размер блока:
+width = content + margin + padding + border*/ - многострочный коммент
+
+body{
+    background-color: #ccc;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 1110px;
+    margin: 50px auto;
+}
+
+/*классический размер блока:
+width = content + margin + padding + border*/
+
+.box{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid blue;
+}
+.box1{ 2 параметра на браузер
+    background-color: red
+}
+.box2{
+    background-color: yellow
+}
+.box3{
+    background-color: green
+}
+
+всё, что может быть на странице
+*,
+*::after,
+*::before{
+    
+}
+переход на авто
+*,
+*::after,
+*::before{
+    box-sizing: border-box; #авто на 2 меньше
+}
+тогда width: 960px;
+
+скруглим углы
+border-radius: 15px 0 15px 0; верхн левб нижн прав
+border-radius: 150px; все углы
+по процентам 50%
+border-radius: 50%;
